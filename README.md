@@ -45,3 +45,11 @@ JSONIterator 维护一个栈来记录当前遍历的位置和状态。
 作用：
 隐藏了JSONComponent 中的内部实现，
 如果要增加不同的children遍历方式只需要增加新的具体Iterator类
+
+
+
+运行结果：
+![alt 属性文本](./Rectangle_0.png )
+![alt 属性文本](./Rectangle_1.png )
+![alt 属性文本](./Tree_0.png )
+![alt 属性文本](./Tree_1.png )
