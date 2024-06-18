@@ -24,7 +24,7 @@ class TreeVisitor(Visitor):
             line_prefix = "└─ " if is_last else "├─ "
             result = f"{indent}{line_prefix}{component.icon}{component.name}\n"
 
-        for i, child in enumerate(component.children):
+        for i, child in enumerate(component):
             label = "   " if is_last else "│  "
             if is_root:
                 label = ""
@@ -63,7 +63,7 @@ class RectangleVisitor(Visitor):
             else:
                 result = f"{line_content} {'─' * padding}┤\n"
 
-        for i, child in enumerate(component.children):
+        for i, child in enumerate(component):
             label = "│  "
             if is_root:
                 label = ""
